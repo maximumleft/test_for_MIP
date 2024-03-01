@@ -5,7 +5,6 @@ namespace App\Services;
 use App\Models\PressureSensor;
 use App\Models\RotationSpeedSensor;
 use App\Models\TemperatureSensor;
-use Illuminate\Support\Collection;
 
 class ParamsService
 {
