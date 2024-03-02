@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Resources\createResources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class RotationSpeedResource extends JsonResource
+class TemperatureCreateResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,9 +15,7 @@ class RotationSpeedResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'y_axios' => $this->v,
-            'x.axios' => $this->created_minute,
+            'temperature' => $this->T,
         ];
     }
-
 }

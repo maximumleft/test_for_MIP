@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TemperatureRequest;
-use App\Http\Resources\TemperatureResource;
+use App\Http\Resources\createResources\TemperatureCreateResource;
 use App\Models\TemperatureSensor;
 use Illuminate\Http\JsonResponse;
 
@@ -16,7 +16,7 @@ class TemperatureController extends Controller
 
         return response()->json([
             'status' => 'ok',
-            'data' => TemperatureResource::make(TemperatureSensor::create($data))
+            'data' => TemperatureCreateResource::make(TemperatureSensor::create($data))
         ]);
     }
 

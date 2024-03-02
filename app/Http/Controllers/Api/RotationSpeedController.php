@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RotationSpeedRequest;
-use App\Http\Resources\RotationSpeedResource;
+use App\Http\Resources\createResources\RotationSpeedCreateResource;
 use App\Models\RotationSpeedSensor;
 use Illuminate\Http\JsonResponse;
 
@@ -16,7 +16,7 @@ class RotationSpeedController extends Controller
 
         return response()->json([
             'status' => 'ok',
-            'data' => RotationSpeedResource::make(RotationSpeedSensor::create($data))
+            'data' => RotationSpeedCreateResource::make(RotationSpeedSensor::create($data))
         ]);
     }
 }

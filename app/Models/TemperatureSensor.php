@@ -11,10 +11,4 @@ class TemperatureSensor extends Model
 
     protected $guarded = false;
 
-    //перенести в сервис
-    public function getCreatedMinuteAttribute(): int
-    {
-        return intval(date('i', strtotime($this->created_at))) ;
-    }
-
 }

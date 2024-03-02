@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PressureRequest;
-use App\Http\Resources\PressureResource;
+use App\Http\Resources\createResources\PressureCreateResource;
 use App\Models\PressureSensor;
 use Illuminate\Http\JsonResponse;
 
@@ -16,7 +16,7 @@ class PressureController extends Controller
 
         return response()->json([
             'status' => 'ok',
-            'data' => PressureResource::make(PressureSensor::create($data))
+            'data' => PressureCreateResource::make(PressureSensor::create($data))
         ]);
     }
 }

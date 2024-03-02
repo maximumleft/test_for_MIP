@@ -11,8 +11,4 @@ class PressureSensor extends Model
 
     protected $guarded = false;
 
-    public function getCreatedMinuteAttribute(): int
-    {
-        return intval(date('i', strtotime($this->created_at))) ;
-    }
 }
