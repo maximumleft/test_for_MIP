@@ -22,15 +22,15 @@ class RotationSpeedRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'v' => 'required | numeric',
+            'value' => 'required | numeric',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'v.required' =>'rotation speed not found',
-            'v.numeric' =>'rotation speed must be a number',
+            'value.required' =>'rotation speed not found',
+            'value.numeric' =>'rotation speed must be a number',
         ];
     }
 }

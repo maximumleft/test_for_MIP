@@ -15,7 +15,7 @@ class TemperatureCreateResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'temperature' => $this->T,
+            'temperature' => $this->value,
         ];
     }
 }

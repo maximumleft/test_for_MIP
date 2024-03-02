@@ -15,8 +15,8 @@ class TemperatureResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'y_axios' => $this->T,
-            'x.axios' => $this->created_time,
+            'y_axios' => $this->value,
+            'x_axios' => $this->created_time,
         ];
     }
 }

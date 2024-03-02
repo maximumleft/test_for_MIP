@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('rotation_speed_sensors', function (Blueprint $table) {
             $table->id();
-            $table->float('v');
+            $table->float('value');
             $table->timestamps();
         });
     }

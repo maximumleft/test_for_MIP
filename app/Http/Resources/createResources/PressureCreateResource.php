@@ -15,7 +15,7 @@ class PressureCreateResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'pressure' => $this->P,
+            'pressure' => $this->value,
         ];
     }
 

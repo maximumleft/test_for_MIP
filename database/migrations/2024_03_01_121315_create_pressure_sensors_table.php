@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pressure_sensors', function (Blueprint $table) {
             $table->id();
-            $table->float('P');
+            $table->float('value');
             $table->timestamps();
         });
     }

@@ -15,8 +15,8 @@ class PressureResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'y_axios' => $this->P,
-            'x.axios' => $this->created_time,
+            'y_axios' => $this->value,
+            'x_axios' => $this->created_time,
         ];
     }
 

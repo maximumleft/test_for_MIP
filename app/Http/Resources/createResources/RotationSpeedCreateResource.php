@@ -15,7 +15,7 @@ class RotationSpeedCreateResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'rotation_speed' => $this->v,
+            'rotation_speed' => $this->value,
         ];
     }
 
