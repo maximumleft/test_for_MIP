@@ -16,6 +16,9 @@ class PressureResource extends JsonResource
     {
         return [
             'pressure' => $this->P,
+            'CreatedMinute' => $this->created_minute,
         ];
     }
+
+
 }

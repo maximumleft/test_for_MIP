@@ -10,7 +10,8 @@ class ParamsService
 {
     public function getTemperatureByTime($timeAgo)
     {
-        return TemperatureSensor::query()
+        // сделать проверку на день неделя, среднее арифметическое
+        return $result = TemperatureSensor::query()
             ->where('created_at', '>=', $timeAgo)
             ->get();
     }

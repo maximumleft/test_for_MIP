@@ -16,6 +16,7 @@ class TemperatureResource extends JsonResource
     {
         return [
             'temperature' => $this->T,
+            'CreatedMinute' => $this->created_minute,
         ];
     }
 }
