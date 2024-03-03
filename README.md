@@ -25,3 +25,8 @@
 
 <img src="https://cdn1.tenchat.ru/static/vbc-gostinder/2023-05-22/bd540c0d-9600-49d3-8620-1184b1d16a96.jpeg">
 
+"php": "8.1",
+"laravel/framework": "10.10",
+"MySQL": "5.7.40",
+
+
