@@ -7,11 +7,10 @@ use App\Http\Requests\PressureRequest;
 use App\Http\Resources\createResources\PressureCreateResource;
 use App\Models\PressureSensor;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class PressureController extends Controller
 {
-    public function setPressure(Request $request): JsonResponse
+    public function setPressure(PressureRequest $request): JsonResponse
     {
         $data = $request->validated();
 
