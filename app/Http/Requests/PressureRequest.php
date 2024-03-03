@@ -22,15 +22,15 @@ class PressureRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'value' => 'required | numeric',
+            'P' => 'required | numeric',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'value.required' =>'pressure not found',
-            'value.numeric' =>'pressure must be a number',
+            'P.required' =>'pressure not found',
+            'P.numeric' =>'pressure must be a number',
         ];
     }
 }

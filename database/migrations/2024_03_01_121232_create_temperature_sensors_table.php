@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('temperature_sensors', function (Blueprint $table) {
             $table->id();
-            $table->float('value');
+            $table->float('T');
             $table->timestamps();
         });
     }

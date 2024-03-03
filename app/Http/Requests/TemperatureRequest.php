@@ -22,15 +22,15 @@ class TemperatureRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'value' => 'required | numeric',
+            'T' => 'required | numeric',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'value.required' =>'temperature not found',
-            'value.numeric' =>'temperature must be a number',
+            'T.required' =>'temperature not found',
+            'T.numeric' =>'temperature must be a number',
         ];
     }
 }
